@@ -1,0 +1,97 @@
+// Global //
+
+*, *::before, *::after {
+    box-sizing:  border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+    
+section {
+    padding: 96px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+// Navigation //
+
+nav {
+    background: $color-1;
+    padding: 12px 0;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 36px;
+    position: relative;
+    font-size: 16px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: $color-main;
+}
+
+// Splash //
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/5349810/pexels-photo-5349810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+.splash-inner .page-title {
+    margin: 0;
+    font-size: 72px;
+    word-spacing: -24px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: $font-text;
+}
+
+.splash-inner .page-subtitle {
+    margin: 24px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px  auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+}
