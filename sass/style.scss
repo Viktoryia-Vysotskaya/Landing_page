@@ -4,18 +4,30 @@ $font-header: 'Oswald', sans-serif;
 
 $font-text: 'Rajdhani', sans-serif;
 
-h1, h2, h3 a {
+$color-main: #ffffff;
+
+$color-one: #daa520;
+
+$color-two: #808080;
+
+h1,
+h2,
+h3 a {
     font-family: $font-header;
 }
 
-li, p {
+li,
+p {
     font-family: $font-text;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 16px;
 }
 
 // Global //
 
 body {
-    display:block;
+    display: block;
     margin: 0;
     text-align: center;
     font-size: 16px;
@@ -26,6 +38,13 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.inside-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 96px;
 }
 
 section {
@@ -47,14 +66,14 @@ section {
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .splash h1 {
-    font-size: 70px;
+    font-size: 100px;
     margin: 48px 0 0 0;
     position: relative;
-    color:#ffffff;
+    color: $color-main;
     font-weight: 900;
     padding-bottom: 40px;
 }
@@ -62,12 +81,12 @@ section {
 .splash h2 {
     font-size: 50px;
     margin: 48px 0 0 0;
-    color:#ffffff;
+    color: $color-main;
     font-family: cursive;
 }
 
 .splash h3 {
-    color:goldenrod;
+    color: $color-one;
     font-family: cursive;
 }
 
@@ -78,13 +97,61 @@ section {
 
 .splash a {
     text-decoration: none;
-    color: #ffffff; 
+    color: $color-main;
 }
 
 .splash-inner a {
-    background:goldenrod;
+    background: $color-one;
+    font-size: 20px;
 }
 
 .splash .row div {
-padding-top: 50px;
+    padding-top: 50px;
+}
+
+// Services //
+
+.box {
+    flex: 0 0 33.333%;
+    position: relative;
+    padding-top: 100px;
+    padding-right: 40px;
+}
+
+.services h1 {
+    padding-top: 60px;
+    font-family: $font-text;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.services h3 {
+    font-size: 24px;
+    font-family: cursive;
+    color: $color-two;
+}
+
+.services h2 {
+    font-weight: 700;
+}
+
+.services p {
+    font-family: cursive;
+    color: $color-two;
+}
+
+.box i {
+    font-size: 30px;
+    color: $color-one;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-one;
+    border-radius: 50%;
+    border: 2px solid $color-one;
+}
+
+.element {
+    padding-top: 20px;
 }
