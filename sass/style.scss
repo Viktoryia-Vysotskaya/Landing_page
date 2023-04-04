@@ -1,12 +1,24 @@
-// Global //
+// Variables //
 
-*, *::before, *::after {
-    box-sizing:  border-box;
+$font-header: 'Oswald', sans-serif;
+
+$font-text: 'Rajdhani', sans-serif;
+
+h1, h2, h3 a {
+    font-family: $font-header;
 }
 
+li, p {
+    font-family: $font-text;
+}
+
+// Global //
+
 body {
+    display:block;
     margin: 0;
-    font-size: 18px;
+    text-align: center;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -15,36 +27,9 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-    
+
 section {
-    padding: 96px 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-  
-// Navigation //
-
-nav {
-    background: $color-1;
-    padding: 12px 0;
-}
-
-.navigation ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.navigation ul li {
-    display: inline-block;
-    margin-right: 36px;
-    position: relative;
-    font-size: 16px;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: $color-main;
+    padding: 108px;
 }
 
 // Splash //
@@ -52,46 +37,54 @@ nav {
 .splash {
     height: 100vh;
     position: relative;
-    background-image: url('https://images.pexels.com/photos/5349810/pexels-photo-5349810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/8346914/pexels-photo-8346914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
 }
-    
+
 .splash-inner {
-    margin: auto;
-    max-width: 70%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.splash-inner .page-title {
-    margin: 0;
-    font-size: 72px;
-    word-spacing: -24px;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: $font-text;
+.splash h1 {
+    font-size: 70px;
+    margin: 48px 0 0 0;
+    position: relative;
+    color:#ffffff;
+    font-weight: 900;
+    padding-bottom: 40px;
 }
 
-.splash-inner .page-subtitle {
-    margin: 24px 0;
-    font-weight: 400;
-    font-size: 16px;
+.splash h2 {
+    font-size: 50px;
+    margin: 48px 0 0 0;
+    color:#ffffff;
+    font-family: cursive;
 }
 
-.btn {
+.splash h3 {
+    color:goldenrod;
+    font-family: cursive;
+}
+
+.splash li {
     display: inline-block;
-    min-width: 160px;
-    margin: 24px  auto 0 auto;
-    padding: 16px;
-    border-radius: 5px;
-    font-family: $font-text;
-    font-size: 16px;
-    text-align: center;
+    padding-right: 50px;
+}
+
+.splash a {
     text-decoration: none;
-    cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
-    background-position: 100% 0;
-    background-size: 300%;
-    transition: $transition;
+    color: #ffffff; 
+}
+
+.splash-inner a {
+    background:goldenrod;
+}
+
+.splash .row div {
+padding-top: 50px;
 }
