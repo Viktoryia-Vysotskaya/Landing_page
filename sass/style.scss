@@ -27,12 +27,11 @@ p {
     font-size: 16px;
 }
 
-// Global //
-
 body {
     margin: 0;
     text-align: center;
     font-size: 16px;
+    height: 100%;
 }
 
 .container {
@@ -227,4 +226,42 @@ footer li {
 
 .copyright i {
     padding-right: 10px;
+}
+
+// Media //
+
+@media (max-width: 767px) {
+    .splash-inner {
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .splash h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .splash h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .splash-inner {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+        text-align: right;
+    }
 }
