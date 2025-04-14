@@ -1,6 +1,6 @@
 💻 PROJECT "LandingPage"
 
-💻 Live demo: https://landingpage-viktoryiavysots.replit.app
+💻 Live demo: https://bootstrap-module-3-lzs2.vercel.app
 
 (!) Free hosting so might take a while to load for first time.
 
